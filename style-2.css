@@ -1,0 +1,242 @@
+/* **************************** */
+/* Header Section */
+/* **************************** */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2d2e32;
+  position: relative;
+  /* overflow-x: hidden; */
+
+  height: 9.6rem;
+  /* we given height to the header because we want it to sticky   */
+  padding: 0 4.8rem;
+}
+.header-heading h1 {
+  color: #f1f3f5;
+}
+/* **************************** */
+/* NAVIGATION Section */
+/* **************************** */
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  /* padding: 1.2rem 2.4rem; */
+  gap: 4.8rem;
+}
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #f1f3f5;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #71b88e;
+}
+.main-nav-link:hover::after {
+  content: " >";
+}
+.main-nav-link:hover::before {
+  content: "< ";
+}
+
+.profile-link-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  /* padding: 1.2rem 2.4rem; */
+  gap: 4.8rem;
+}
+/* .logo {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #fff;
+} */
+.profile-link-nav:link,
+.profile-link-nav:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #aaa;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+.profile-link-nav:hover,
+.profile-link-nav:active {
+  color: #71b88e;
+}
+.mail {
+  height: 5rem;
+  width: 5rem;
+}
+
+/* **************************** */
+/* Hero Section */
+/* **************************** */
+
+.section-hero {
+  background-color: #2d2e32;
+  padding: 4.8rem 9.6rem 0;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 9.6rem;
+}
+.hero-heading {
+  color: #f1f3f5;
+}
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.hero-img {
+  width: 80%;
+  filter: brightness(1);
+  opacity: 70%;
+}
+/* **************************** */
+/* Hero Section */
+/* **************************** */
+
+.section-about-me {
+  background-color: #25262a;
+  padding: 4.8rem 9.6rem 0;
+}
+.card-item {
+  padding: 2.4rem;
+  background-color: #2d2e32;
+  border-radius: 5px;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+.card-title {
+  color: #fefefe;
+  margin-bottom: 4.8rem;
+}
+.logo {
+  height: 24px;
+  width: 24px;
+  color: #f1f3f5;
+}
+.card-item:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+  color: #71b88e;
+}
+.info {
+  padding: 2rem;
+}
+.tag {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 5rem;
+}
+
+.info-text {
+  color: #f1f3f5;
+}
+.secondary-text {
+  /* margin-top: 10rem; */
+  font-size: 1.8rem;
+}
+.teritary-text {
+  margin-top: 12rem;
+  font-size: 1.8rem;
+  color: #555;
+}
+
+/* **************************** */
+/* CTA Section */
+/* **************************** */
+
+.section-cta {
+  background-color: #25262a;
+  padding: 4.8rem 9.6rem 0;
+  /* margin-bottom: 4rem; */
+}
+.cta-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-image: linear-gradient(to right bottom, #ced4da, #ced4da);
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+  overflow: hidden;
+  /* temp height */
+  /* height: 50rem; */
+}
+
+.cta-text-box {
+  color: #45260a;
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+}
+
+.cta .heading-secondary {
+  /* color: #45260a; */
+  color: inherit;
+  margin-bottom: 3.2rem;
+}
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 78, 0.35),
+      rgba(0, 0, 0, 0.373)
+    ),
+    url("./img.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+  /* margin-bottom: 12.8rem; */
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #fdf2e9;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.cta-form input::placeholder {
+  color: #aaa;
+}
+
+.cta-form *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}

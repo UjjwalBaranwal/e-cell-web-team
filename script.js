@@ -21,24 +21,20 @@ button.addEventListener("click", () => {
 });
 
 const squares = document.querySelectorAll(".item-3-grid");
-const originalColors = [];
-const clickedSquares = [];
+const clicked = [];
 
 squares.forEach((square, index) => {
-  originalColors.push(square.style.backgroundColor);
-
   square.addEventListener("click", () => {
     square.style.backgroundColor = "#7a0000";
-    clickedSquares.push(index);
+    clicked.push(index);
 
     if (index === squares.length - 1) {
-      clickedSquares.forEach((clickedSquareIndex, i) => {
+      clicked.forEach((clickedIndex, i) => {
         setTimeout(() => {
-          squares[clickedSquareIndex].style.backgroundColor =
-            originalColors[clickedSquareIndex];
+          squares[clickedIndex].style.backgroundColor = "#00407a";
 
-          if (i === clickedSquares.length - 1) {
-            clickedSquares.length = 0;
+          if (i === clicked.length - 1) {
+            clicked.length = 0;
           }
         }, i * 1000);
       });

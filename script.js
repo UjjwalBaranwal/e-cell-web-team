@@ -34,7 +34,6 @@ squares.forEach((square, index) => {
     if (index === squares.length - 1) {
       clickedSquares.forEach((clickedSquareIndex, i) => {
         setTimeout(() => {
-          squares[clickedSquareIndex].classList.add("reset");
           squares[clickedSquareIndex].style.backgroundColor =
             originalColors[clickedSquareIndex];
 
